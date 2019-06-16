@@ -5,8 +5,11 @@ class Menu extends Component {
   render() {
     return (
       <Fragment>
-        <Link to='/'>[ Home ]</Link> 
-        <Link to='/cadastro'>[ Cadastro ]</Link> 
+        <Link to='/'>[ Home ]</Link>
+        &nbsp;&nbsp;
+        <Link to='/calculator'>[ Calculadora ]</Link>
+        &nbsp;&nbsp;
+        <Link to='/exchange'>[ Câmbio ]</Link>
       </Fragment>
     )
   }

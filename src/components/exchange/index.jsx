@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 
-class Cadastro extends Component {
+class Exchange extends Component {
   render() {
     return (
       <Fragment>
-        <p>Página de cadastro</p>
+        <p>Câmbio</p>
       </Fragment>
     )
   }
 }
 
-export default Cadastro;
+export default Exchange;
