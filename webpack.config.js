@@ -1,6 +1,8 @@
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './src/index.js',
-  modules: {
+  entry: './src/index.jsx',
+  module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
@@ -17,8 +19,12 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
     contentBase: './dist',
+    hot: true,
     port: 3000
   }
 }
